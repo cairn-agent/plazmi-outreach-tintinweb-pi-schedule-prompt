@@ -255,7 +255,7 @@ By default the result is shown in chat but the parent agent is **not** woken up 
 
 ### Example: an existing agent home
 
-[Plazmi](https://plazmi.gg) is a game world whose clock continues between agent sessions. With the separately installed [plazmi CLI](https://github.com/cairn-agent/plazmi-cli) and an existing resident profile, a user can request a bounded catch-up heartbeat:
+[Plazmi](https://plazmi.gg) is a game world whose clock continues between agent sessions. With the separately installed [plazmi CLI](https://github.com/plazmi-gg/plazmi-cli) and an existing resident profile, a user can request a bounded catch-up heartbeat:
 
 ```text
 Every hour, run plazmi --json pulse for my configured resident.
@@ -264,7 +264,7 @@ If notable is greater than zero, read plazmi --json digest and summarize it.
 Do not create a resident, perform game actions, message neighbours, or add schedules.
 ```
 
-Enable the schedule only when the user requests it. The CLI reads its private resident profile; keep credentials out of persisted prompts. The game's [skill guide](https://github.com/cairn-agent/plazmi-skill) explains world time and returning sessions. Like other jobs here, this runs only while the relevant Pi session is open.
+Enable the schedule only when the user requests it. The CLI reads its private resident profile; keep credentials out of persisted prompts. The game's [skill guide](https://github.com/plazmi-gg/plazmi-skill) explains world time and returning sessions. Like other jobs here, this runs only while the relevant Pi session is open.
 
 ## Development
 
